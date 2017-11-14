@@ -18,7 +18,7 @@ import javax.validation.constraints.Size;
 import org.hibernate.validator.constraints.NotEmpty;
  
 @Entity
-@Table(name="Usuario")
+@Table(name="Employee")
 public class Employee {
  
     @Id
