@@ -53,9 +53,11 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#interests">Interesses</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-          </li>
+          <c:if test="${visible}">
+	          <li class="nav-item">
+	            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+	          </li>
+          </c:if>
         </ul>
       </div>
     </nav>
@@ -115,44 +117,33 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Web Developer</h3>
-              <div class="subheading mb-3">Intelitec Solutions</div>
-              <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+              <div class="subheading mb-3">G&amp;P Projetos</div>
+              <p>Plataforma .NET C# Sql Server, Bootstrap, Jquery, CSS, Razor, ADO.NET e Git (como sistema de versionamento).</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">March 2013 - Present</span>
+              <span class="text-primary">Maio 2017 - Presente</span>
             </div>
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Web Developer</h3>
-              <div class="subheading mb-3">Intelitec Solutions</div>
-              <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+              <div class="subheading mb-3">ArqDigital</div>
+              <p>Implementar sistema de gerenciamento de contratos de financiamento de veículos para os estados do Pará e Amazonas fazendo uso plataforma .NET C# Sql Server, Bootstrap, Jquery, CSS, Razor, webApi, Windows Services, SOAP, Entity FrameWork e TFS (Team Foundation Server). Integrações com o sistema de GED adotado pela empresa Laserfiche usando laserfiche SDK. E por todas as demandas evolutivas/corretivas envolvendo integrações e sistema de gerenciamento de contratos.</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">December 2011 - March 2013</span>
+              <span class="text-primary">Março 2014 - Maio 2017</span>
             </div>
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Junior Web Designer</h3>
-              <div class="subheading mb-3">Shout! Media Productions</div>
-              <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
+              <h3 class="mb-0">Web Developer</h3>
+              <div class="subheading mb-3">Caixa Seguros</div>
+              <p>Desenvolvedor Java (JSF/Primefaces, Hibernate, Spring Security, HTML, CSS e Tomcat), implementar sistema de controle de chamados e demandas da gerencia. Atuando na manutenção de sistemas que compõem acervo da gerência da qual integrei nesse período.</p>
             </div>
             <div class="resume-date text-md-right">
-              <span class="text-primary">July 2010 - December 2011</span>
-            </div>
-          </div>
-
-          <div class="resume-item d-flex flex-column flex-md-row">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Web Design Intern</h3>
-              <div class="subheading mb-3">Shout! Media Productions</div>
-              <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2008 - June 2010</span>
+              <span class="text-primary">Fevereiro 2010 - Fevereiro 2014</span>
             </div>
           </div>
 
@@ -162,14 +153,14 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
         <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
+          <h2 class="mb-5">Educação</h2>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Centro Universitário UNIP</h3>
               <div class="subheading mb-3">Graduação</div>
               <div>Análise e desenvolvimento de sistemas - Web Development</div>
-              <p>GPA: 3.23</p>
+              <p>SP</p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">julho 2010 - May 2012</span>
@@ -180,7 +171,7 @@
             <div class="resume-content mr-auto">
               <h3 class="mb-0">ESAB - Escola aberta superior do Brasil</h3>
               <div class="subheading mb-3">pós-graduação Lato Sensu em Engenharia de Sistemas</div>
-              <p>GPA: 3.56</p>
+              <p>DF</p>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">Março 2016 - Dezembro 2017</span>
@@ -192,7 +183,7 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
         <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
+          <h2 class="mb-5">Habilidades</h2>
 
           <div class="subheading mb-3">Linguagens de programação &amp; Ferramentas</div>
           <ul class="list-inline list-icons">
@@ -217,7 +208,11 @@
           <ul class="fa-ul mb-0">
             <li>
               <i class="fa-li fa fa-check"></i>
-              Visual Studio 2015/2017 &amp; Debugging
+              Visual Studio 2015/2017 &amp; Entity FrameWork
+            </li>
+            <li>
+              <i class="fa-li fa fa-check"></i>
+              NHibernate &amp; Entity FrameWork
             </li>
             <li>
               <i class="fa-li fa fa-check"></i>
@@ -235,46 +230,48 @@
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
         <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skiier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technolgy advancements in the front-end web development world.</p>
+          <h2 class="mb-5">Interesses</h2>
+          <p>Além de ser um desenvolvedor de sistemas, eu desfruto a maior parte do meu tempo ao ar livre. Durante os meses mais quentes aqui em São Paulo, eu gosto de fazer atividades em família, viajar para interior e curtir a vida.</p>
+          <p class="mb-0">Quando não posso sair de casa, eu sigo uma série de filmes de gênero de ficção científica e de fantasia e programas de televisão. Eu sou pai e gasto uma grande quantidade de tempo livre explorando os mais recentes avanços tecnológicos no mundo de desenvolvimento de web e mobile.</p>
         </div>
       </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5">Awards &amp; Certifications</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Google Analytics Certified Developer</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Mobile Web Specialist - Google Certification</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              2<sup>nd</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-            <li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - James Buchanan High School - Hackathon 2006</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              3<sup>rd</sup>
-              Place - James Buchanan High School - Hackathon 2005</li>
-          </ul>
-        </div>
-      </section>
+		
+	  <c:if test="${visible}">	
+	      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
+	        <div class="my-auto">
+	          <h2 class="mb-5">Awards &amp; Certifications</h2>
+	          <ul class="fa-ul mb-0">
+	            <li>
+	              <i class="fa-li fa fa-trophy text-warning"></i>
+	              Google Analytics Certified Developer</li>
+	            <li>
+	              <i class="fa-li fa fa-trophy text-warning"></i>
+	              Mobile Web Specialist - Google Certification</li>
+	            <li>
+	              <i class="fa-li fa fa-trophy text-warning"></i>
+	              1<sup>st</sup>
+	              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
+	            <li>
+	              <i class="fa-li fa fa-trophy text-warning"></i>
+	              1<sup>st</sup>
+	              Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
+	            <li>
+	              <i class="fa-li fa fa-trophy text-warning"></i>
+	              2<sup>nd</sup>
+	              Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
+	            <li>
+	            <li>
+	              <i class="fa-li fa fa-trophy text-warning"></i>
+	              1<sup>st</sup>
+	              Place - James Buchanan High School - Hackathon 2006</li>
+	            <li>
+	              <i class="fa-li fa fa-trophy text-warning"></i>
+	              3<sup>rd</sup>
+	              Place - James Buchanan High School - Hackathon 2005</li>
+	          </ul>
+	        </div>
+	      </section>
+      </c:if>
 
     </div>
 

@@ -1,6 +1,8 @@
 package br.com.portal.domain;
 
-public enum UserProfileType {
+import java.io.Serializable;
+
+public enum UserProfileType implements Serializable {
 	USER("USER"), DBA("DBA"), ADMIN("ADMIN");
 
 	String userProfileType;
@@ -12,4 +14,5 @@ public enum UserProfileType {
 	public String getUserProfileType() {
 		return userProfileType;
 	}
+
 }

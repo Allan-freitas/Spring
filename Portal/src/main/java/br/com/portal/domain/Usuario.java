@@ -36,14 +36,11 @@ public class Usuario {
 	@Column(name="EMAIL", nullable = false)
 	private String email;
 
-	@Column(name="STATE", nullable = false)
-	private String state = State.ACTIVE.getState();
-
 	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(name = "APP_USER_USER_PROFILE", 
              joinColumns = { @JoinColumn(name = "USER_ID") }, 
              inverseJoinColumns = { @JoinColumn(name = "USER_PROFILE_ID") })
-	private Set<UserProfile> userProfiles = new HashSet<UserProfile>();
+	private Set<UsuarioProfile> userProfiles = new HashSet<UsuarioProfile>();
 
 	public int getId() {
 		return id;
@@ -93,19 +90,11 @@ public class Usuario {
 		this.email = email;
 	}
 
-	public String getState() {
-		return state;
-	}
-
-	public void setState(String state) {
-		this.state = state;
-	}
-
-	public Set<UserProfile> getUserProfiles() {
+	public Set<UsuarioProfile> getUserProfiles() {
 		return userProfiles;
 	}
 
-	public void setUserProfiles(Set<UserProfile> userProfiles) {
+	public void setUserProfiles(Set<UsuarioProfile> userProfiles) {
 		this.userProfiles = userProfiles;
 	}
 
@@ -141,7 +130,7 @@ public class Usuario {
 	public String toString() {
 		return "User [id=" + id + ", ssoId=" + cpf + ", password=" + password
 				+ ", firstName=" + firstName + ", lastName=" + lastName
-				+ ", email=" + email + ", state=" + state + ", userProfiles=" + userProfiles +"]";
+				+ ", email=" + email + ", userProfiles=" + userProfiles +"]";
 	}
 
 }

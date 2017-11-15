@@ -28,8 +28,9 @@ public class HomeController {
     @Autowired
     MessageSource messageSource;
  
-    @RequestMapping(value = "/")
-    public String index() {
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String index(ModelMap model) {
+    	model.addAttribute("visible", false);
     	return "index";
     }
     
