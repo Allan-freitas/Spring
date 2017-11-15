@@ -36,7 +36,7 @@ public class Usuario {
 	@Column(name="EMAIL", nullable = false)
 	private String email;
 
-	@Column(name="STATE", nullable=false)
+	@Column(name="STATE", nullable = false)
 	private String state = State.ACTIVE.getState();
 
 	@ManyToMany(fetch = FetchType.EAGER)
