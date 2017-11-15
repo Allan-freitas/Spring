@@ -13,24 +13,24 @@
 	<title>Curriculum</title>
 	
 	<!-- Bootstrap core CSS -->
-    <link href="<c:url value='/vendor/bootstrap/css/bootstrap.min.css'/>" rel="stylesheet">
+    <link href="<c:url value='/static/vendor/bootstrap/css/bootstrap.min.css'/>" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="<c:url value='/vendor/font-awesome/css/font-awesome.min.css'/>" rel="stylesheet">
-    <link href="<c:url value='/vendor/devicons/css/devicons.min.css'/>" rel="stylesheet">
-    <link href="<c:url value='/vendor/simple-line-icons/css/simple-line-icons.css'/>" rel="stylesheet">
+    <link href="<c:url value='/static/vendor/font-awesome/css/font-awesome.min.css'/>" rel="stylesheet">
+    <link href="<c:url value='/static/vendor/devicons/css/devicons.min.css'/>" rel="stylesheet">
+    <link href="<c:url value='/static/vendor/simple-line-icons/css/simple-line-icons.css'/>" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="<c:url value='/css/resume.min.css'/>" rel="stylesheet">
+    <link href="<c:url value='/static/css/resume.min.css'/>" rel="stylesheet">
 </head>
 <body id="page-top">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Start Bootstrap</span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="<c:url value='/static/img/profile.jpg'/>" alt="">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -295,14 +295,14 @@
     </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="<c:url value='/vendor/jquery/jquery.min.js'/>"></script>
-    <script src="<c:url value='/vendor/bootstrap/js/bootstrap.bundle.min.js'/>"></script>
+    <script src="<c:url value='/static/vendor/jquery/jquery.min.js'/>"></script>
+    <script src="<c:url value='/static/vendor/bootstrap/js/bootstrap.bundle.min.js'/>"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="<c:url value='/vendor/jquery-easing/jquery.easing.min.js'/>"></script>
+    <script src="<c:url value='/static/vendor/jquery-easing/jquery.easing.min.js'/>"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="<c:url value='/js/resume.min.js'/>"></script>
+    <script src="<c:url value='/static/js/resume.min.js'/>"></script>
 	
 </body>
 </html>
